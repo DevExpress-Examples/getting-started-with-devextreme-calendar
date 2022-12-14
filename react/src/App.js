@@ -30,6 +30,8 @@ function App() {
             max={maxDate}
             disabledDates={disabledDates}
             cellRender={CustomCell}
+            showWeekNumbers={true}
+            weekNumberRule="firstDay"
         >
         </Calendar>
     ); 
@@ -57,8 +59,10 @@ function CustomCell(cell) {
 function getCellCssClass(date, view) {
     let cssClass = '';
     federalHolidays.forEach((item) => {
-        if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-            cssClass = 'holiday';
+        if (date !== undefined) {
+            if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                cssClass = 'holiday';
+            }
         }
     });
     return cssClass;

@@ -6,6 +6,8 @@
         :max="maxDate"
         :disabled-dates="disabledDates"
         cell-template="custom"
+        :show-week-numbers="true"
+        week-number-rule="firstDay"
     >
         <template #custom="{ data: cell }">
             <span :class="getCellCssClass(cell.date, cell.view)">
@@ -52,8 +54,10 @@
             getCellCssClass(date, view) {
                 let cssClass = '';
                 federalHolidays.forEach((item) => {
-                    if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-                        cssClass = 'holiday';
+                    if (date !== undefined) {
+                        if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                            cssClass = 'holiday';
+                        }
                     }
                 });
                 return cssClass;
