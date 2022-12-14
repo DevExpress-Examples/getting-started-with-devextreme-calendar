@@ -5,6 +5,8 @@
     [max]="maxDate"
     [disabledDates]="disabledDates"
     cellTemplate="cell"
+    [showWeekNumbers]="true"
+    weekNumberRule="firstDay"
 >
     <span
         *dxTemplate="let cell of 'cell'"
