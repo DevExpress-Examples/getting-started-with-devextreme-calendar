@@ -1,0 +1,17 @@
+<dx-calendar
+    [showTodayButton]="true"
+    zoomLevel="year"
+    [min]="minDate"
+    [max]="maxDate"
+    [disabledDates]="disabledDates"
+    cellTemplate="cell"
+    [showWeekNumbers]="true"
+    weekNumberRule="firstDay"
+>
+    <span
+        *dxTemplate="let cell of 'cell'"
+        [ngClass]="getCellCssClass(cell.date, cell.view)"
+    >
+        {{ cell.text }}
+    </span>
+</dx-calendar>>
