@@ -1,4 +1,5 @@
-.demo-container {
-    margin: 50px;
-    width: 90vw;
+.dx-calendar-cell:not(.dx-calendar-other-month) .holiday {
+    text-shadow: none;
+    font-weight: bold;
+    color: #ff3030;
 }

@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dx-calendar-cell:not(.dx-calendar-other-month) .holiday {
+  text-shadow: none;
+  font-weight: bold;
+  color: #ff3030;
+}
+
+.dx-calendar-cell:not(.dx-calendar-other-month) .weekend {
+  color: #999;
+}
+
+.dx-calendar-cell:not(.dx-calendar-other-month) .week-number {
+  font-weight: bold;
+}

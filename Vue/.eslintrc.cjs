@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   extends: ['devextreme/spell-check'],
+  ignorePatterns: ['dist/**/*'],
   overrides: [{
     files: ['*.ts', '*.vue'],
     extends: [

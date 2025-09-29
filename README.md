@@ -18,9 +18,10 @@ This repository stores the code examples of the Calendar component for the [Gett
 - **jQuery**
     - [index.js](jQuery/src/index.js)
 - **React**
-    - [App.js](React/src/App.js)
+    - [App.js](React/src/App.tsx)
 - **Vue**
     - [App.vue](Vue/src/App.vue)
+    - [CalendarContent.vue](Vue/src/components/CalendarContent.vue)
 
 ## Documentation
 
