@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
 import { DxCalendarTypes } from 'devextreme-angular/ui/calendar';
 
 import { DxCalendarModule } from 'devextreme-angular/ui/calendar';
 
 @Component({
     selector: 'app-root',
-    imports: [DxCalendarModule],
+    imports: [DxCalendarModule, NgClass],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
