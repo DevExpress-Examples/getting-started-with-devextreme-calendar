@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { DxCalendarTypes } from 'devextreme-angular/ui/calendar';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent {
   federalHolidays = [
