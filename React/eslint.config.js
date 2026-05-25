@@ -23,6 +23,11 @@ export default [
     },
     settings: {
       react: { version: '18.2' },
+      'import/resolver': {
+        node: {
+          extensions: ['.mjs', '.js', '.jsx', '.json', '.ts', '.tsx', '.d.ts'],
+        },
+      },
     },
   },
   {
