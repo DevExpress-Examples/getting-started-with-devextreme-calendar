@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { DxCalendarTypes } from 'devextreme-angular/ui/calendar';
 
@@ -8,6 +8,7 @@ import { DxCalendarModule } from 'devextreme-angular/ui/calendar';
     selector: 'app-root',
     imports: [DxCalendarModule, NgClass],
     templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
